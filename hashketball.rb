@@ -134,3 +134,25 @@ return game_hash[:"Brooklyn Nets"]
 def num_points_scored
   game_hash
 end
+ def .loop
+  [1, 2, 3].each { |n| puts "Current number is: #{n}" }
+  Current number is: 1
+  Current number is: 2
+  Current number is: 3
+ end  
+
+def helper
+  [1, 2, 3].each do |n|
+    text = "Current number is: #{n}"
+    puts text
+  end
+  Current number is: 1
+  Current number is: 2
+  Current number is: 3
+end
+def return_without_value
+  return game_hash
+end
+
+return_without_value # => nil
+
