@@ -127,3 +127,10 @@ def game_hash
 end
 
 # Write code here
+ def game_hash[:home][:team_name]
+return game_hash[:"Brooklyn Nets"]
+ end
+
+def num_points_scored
+  game_hash
+end
